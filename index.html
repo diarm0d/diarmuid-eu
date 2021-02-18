@@ -9,33 +9,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="portfolio-project-1" class="home-splash">
+    <section id="portfolio-home" class="home-splash">
     <div class="content-wrapper">
         <!-- content left -->
         <div class="left-wrapper">
-            <h1 class="title">Fáilte.</h1>
+            <h1 class="title">Hello.</h1>
             <p class="sub-header">My name is Diarmuid.</p>
             <p>I am a web developer. Most of my work is open source and available on <a src="https://github.com/diarm0d" target="_blank">GitHub</a>. You can follow me on <a src="https://twitter.com/DiarmuidEu" target="_blank">Twitter</a> or connect with me on <a src="https://github.com/diarm0d" target="_blank">LinkedIn</a>.
             <p> I am currently open to discuss new opportunities. With four years professional experience in a variety of marketing & data orientated roles, I aim to combine my business accumen with my development skills.</p>
-            <button class="explore-portfolio">Explore my Portfolio</button>
+            <button class="explore-portfolio" id="explore-portfolio">Explore my Portfolio</button>
             <button class="contact-me">Contact Me</button>
         </div>
-        <div class="right-wrapper">
-            <img src="./img/03.png" alt="absurd image">
+        <div class="right-wrapper" id="image-wrapper">
+            <img src="./img/03.png" alt="absurd image" id="splash-image">
         </div>
     </div>
     </section>
     <!-- sections -->
     <section id="portfolio-project-1" class="portfolio">
+        <div class="theme-switch-wrapper">
+            <span id="toggle-icon">
+                    <i class="fas fa-sun dark-light-icon"></i>
+            </span>
+            <label class="theme-switch">
+                <input type="checkbox">
+                <div class="slider round"></div>
+            </label>
+        </div>
         <div class="project-wrapper">
-            <p class="sub-header">Wikipedia Search App</p>
+            <p class="sub-header portfolio-text">Wikipedia Search App</p>
+            <div class="stack-wrapper">
+                <p class="html stack">HTML <i class="fab fa-html5"></i></p>
+                <p class="css stack">CSS <i class="fab fa-css3-alt"></i></p>
+                <p class="js stack">JavaScript <i class="fab fa-js-square"></i></p>
+            </div>
             <p class="intro-header">Scope</p>
             <p>Project from <a src="https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-wikipedia-viewer" target="_blank">FreeCodeCamp</a>, to build a Wikipedia viewer by using their api.
             <p class="intro-header">Functionality</p>
             <p> - User should be able search Wikipedia using a searchbox and see the resulting entries.</p>
             <p> - User should be able click a button to see random Wikipedia page.</p>
-            <p class="intro-header">Result</p>
-            <p> I tried to mimic the layout of Wikipedia's hompage while giving it a modern touch. </p>
             <button class="contact-me code" onclick="location.href='https://github.com/diarm0d/wikipedia-search-app'">View Code <i class="fab fa-github"></i></button>
             <button class="explore-portfolio live" onclick="location.href='https://diarm0d.github.io/wikipedia-search-app/'">Check Out Live</button>
         </div>
@@ -123,7 +135,7 @@
             <button class="explore-portfolio live">Check Out Live</button>
         </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="portfolio">
         <div class="social-icons">
             <i class="fab fa-github social"></i>
             <i class="fab fa-codepen social"></i>
