@@ -18,7 +18,7 @@
     --background: #060910;
     --background-alt: #0E1218;
     --box-shadow: 0 1px 4px rgba(0,0,0,0.5);
-    --border: 1px solid rgba(221, 221, 221, 0.7);
+    --border: 1px solid #30363D;
   }
 
 html {
@@ -172,9 +172,12 @@ section {
       background-color: var(--background);
   }
 
-  /* .portfolio {
+  .email-display {
     display: none;
-  } */
+  }
+  .portfolio-display {
+    display: none;
+  }
 
   .dark-light-icon {
       color: var(--on-primary);
@@ -271,7 +274,7 @@ section {
   }
 
   .slider {
-    background: #000;
+    background: var( --primary-color);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -311,4 +314,22 @@ section {
   .fas {
     font-size: 30px;
     margin-right: 5px;
+  }
+
+  .back-up-button {
+    height: 80px;
+    width: auto;
+    position: absolute;
+    bottom: 50px;
+    font-size: 80px;
+    color: var(--on-primary);
+    cursor: pointer;
+  }
+
+  .fa-angle-double-up {
+    font-size: 80px;
+  }
+
+  .fa-angle-double-up:hover {
+    color: var(--primary-color);
   }
