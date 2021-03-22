@@ -50,7 +50,7 @@ function exitPortfolio() {
 function copy() {
     var copyText = emailInput.value;
     copyToClipboard(copyText);
-    contactBtn.textContent = 'Copied email';
+    contactBtn.textContent = 'Copied Email';
   }
 
   const copyToClipboard = str => {
